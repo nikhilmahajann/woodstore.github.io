@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | WoodStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images\logo.jpg" width="150px">
+            </div>
+            <nav>
+                <ul id="Menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product details.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images\cart.jpg"  width="30px" height="30px"></a>
+            <img src="images\menu.png"  class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+    </div> 
+<!---------single product details-->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images\feature-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images\pd-1.jpg" width="100%" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="images\pd-2.jpg" width="100%" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="images\pd-3.jpg" width="100%" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="images\pd-4.jpg" width="100%" class="SmallImg">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-2">
+            
+            <h1>L-Shape Sofa</h1>
+            <h4>$8,999</h4>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+
+            <h3>Product Details</h3>
+            <p>Corner sectional modular fabric sofa.A game between rigid and soft shapes: the Groovy sofa embodies the essence of relaxation in a slender structure. A sofa that blooms with many petals, the armrests of Groovy open slightly outwards focusing on the soft cushions. </p>
+        </div>
+    </div>
+</div>
+
+
+<!-------title-->
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+
+
+<!--------products-->
+
+<div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images\feature-1.jpg" alt="">
+            <h4>L Shape Sofa</h4>
+            <p>$8,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\feature-2.jpg" alt="">
+            <h4>Cream Chair</h4>
+            <p>$5,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\feature-3.jpg" alt="">
+            <h4>King Size Bed</h4>
+            <p>$13,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\feature-4.jpg" alt="">
+            <h4>Royal Chair</h4>
+            <p>$8,999</p>
+        </div>
+       
+    </div>
+</div>
+  <!-------footer-->
+
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col-1">
+                   <h3>Download our app</h3>
+                   <p>Download app for android and ios</p>
+                   <div class="app-logo"></div>
+               </div>
+               <div class="footer-col-2">
+                <img src="images\logo.jpg" alt="">
+               </div>
+               <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+               </div>
+               <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+               </div>
+
+           </div>
+       </div>
+   </div>
+
+<!-------js for toggle menu----------->
+   <script>
+       var Menuitems = document.getElementById("Menuitems");
+
+       Menuitems.style.maxHeight== "0px";
+       
+       function menutoggle(){
+           if(Menuitems.style.maxHeight == "0px")
+              {
+                Menuitems.style.maxHeight == "200px";          
+              }
+        else
+             {
+              Menuitems.style.maxHeight = "0px";
+             }
+            }
+   </script>
+
+<!-----------js for product gallery-->
+   <script>
+       var ProductImg = document.getElementById("ProductImg");
+       var SmallImg = document.getElementsByClassName("SmallImg");
+         
+       SmallImg[0].onclick = function()
+       {
+           ProductImg.src = SmallImg[0].src;
+       }
+       SmallImg[1].onclick = function()
+       {
+           ProductImg.src = SmallImg[1].src;
+       }
+       SmallImg[2].onclick = function()
+       {
+           ProductImg.src = SmallImg[2].src;
+       }
+       SmallImg[3].onclick = function()
+       {
+           ProductImg.src = SmallImg[3].src;
+       }
+   </script>
+
+
+</body>
+</html>

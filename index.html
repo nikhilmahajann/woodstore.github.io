@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodStore|Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+              <a href="index.html"></a>  <img src="images\logo.jpg" width="150px" > </a>
+            </div>
+            <nav>
+                <ul id="Menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images\cart.jpg"  width="30px" height="30px"></a>
+            <img src="images\menu.png"  class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give your Home <br> A new Look </h1>
+                <p>
+                    Home is not only about walls, It's About the Decoration.
+                </p>
+                <a href="products.html" class="btn">Explore Now &#10095;</a>
+
+            </div>
+            <div class="col-2">
+                <img src="images\cover.jpg" >
+
+            </div>
+        </div>
+    </div> 
+</div>
+<!----------featured categories----->    
+<div class="categories">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+            <img src="images\sofa.jpg" alt="">
+        </div>
+        <div class="col-3">
+            <img src="images\chair.jpg" alt="">
+        </div>
+
+        <div class="col-3">
+            <img src="images\bed.jpg" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+
+<!------featured products-->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images\feature-1.jpg" alt="">
+            <h4>L Shape Sofa</h4>
+            <p>$8,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\feature-2.jpg" alt="">
+            <h4>Cream Chair</h4>
+            <p>$5,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\feature-3.jpg" alt="">
+            <h4>King Size Bed</h4>
+            <p>$13,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\feature-4.jpg" alt="">
+            <h4>Royal Chair</h4>
+            <p>$8,999</p>
+        </div>
+       
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images\latest-1.jpg" alt="">
+            <h4>Brown Chair</h4>
+            <p>$4,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\latest-2.jpg" alt="">
+            <h4>Rexin SOfa 3-Seater</h4>
+            <p>$7,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\latest-3.jpg" alt="">
+            <h4>Grey Bed</h4>
+            <p>$13,999</p>
+        </div>
+        <div class="col-4">
+            <img src="images\latest-4.jpg" alt="">
+            <h4>Grey Semi circular</h4>
+            <p>$8,999</p>
+        </div>
+       
+    </div>
+    
+</div>
+<!------brands-->
+  <div class="brands">
+      <div class="small-container">
+          <div class="row">
+              <div class="col-5">
+                  <img src="images\brand-1.jpg" alt="">
+              </div>
+              <div class="col-5">
+                <img src="images\brand-2.jpg" alt="">
+            </div>
+            <div class="col-5">
+                <img src="images\brand-3.jpg" alt="">
+            </div>
+            <div class="col-5">
+                <img src="images\brand-4.jpg" alt="">
+            </div>
+            <div class="col-5">
+                <img src="images\brand-5.jpg" alt="">
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <!-------footer-->
+
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col-1">
+                   <h3>Download our app</h3>
+                   <p>Download app for android and ios</p>
+                   <div class="app-logo"></div>
+               </div>
+               <div class="footer-col-2">
+                <img src="images\logo.jpg" alt="">
+               </div>
+               <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+               </div>
+               <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+               </div>
+
+           </div>
+       </div>
+   </div>
+
+<!-------js for toggle menu----------->
+   <script>
+       var Menuitems = document.getElementById("Menuitems");
+
+       Menuitems.style.maxHeight== "0px";
+       
+       function menutoggle(){
+           if(Menuitems.style.maxHeight == "0px")
+              {
+                Menuitems.style.maxHeight == "200px";          
+              }
+        else
+             {
+              Menuitems.style.maxHeight = "0px";
+             }
+            }
+   </script>
+</body>
+</html>
